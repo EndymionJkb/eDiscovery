@@ -1,0 +1,275 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:28:02 -0500
+Connecting to database specified by database.yml
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 234ms
+
+ActionView::Template::Error (undefined method `full_title' for #<#<Class:0x473ccb8>:0x473b0e0>):
+    1: !!!
+    2: %html
+    3:   %head
+    4:     %title= full_title(yield(:title))
+    5:     = stylesheet_link_tag    "application", media: "all"
+    6:     = javascript_include_tag "application"
+    7:     = csrf_meta_tags
+  app/views/layouts/application.html.haml:4:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:29:36 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (0.0ms)
+Completed 500 Internal Server Error in 4009ms
+
+ActionView::Template::Error (Inconsistent indentation: "\t          " was used for indentation, but the rest of the document was indented using 2 spaces.):
+    12:             %a{:href => "#modal-help", :data => {:toggle => "modal"}}
+    13:               Help
+    14:           -#
+    15: 	          - if signed_in?
+    16: 	            %li= link_to t('take_test_html'), intro_path, :id => 'take_test'
+    17: 	            - if admin_user?
+    18: 	              / Don't need to translate Admin screens
+  app/views/layouts/_header.html.haml:15
+  app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:31:06 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (0.0ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (Inconsistent indentation: 11 spaces were used for indentation, but the rest of the document was indented using 2 spaces.):
+    44:                   %li.divider
+    45:                   %li
+    46:                     = link_to t('sign_out'), signout_path, method: "delete"
+    47:            - else
+    48:               %li
+    49:                 = link_to t('contact'), contact_path
+    50:               %li= link_to "Register", root_url(:anchor => "getting-started"), :class => "callout"
+  app/views/layouts/_header.html.haml:47
+  app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:31:09 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (0.0ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (Inconsistent indentation: 11 spaces were used for indentation, but the rest of the document was indented using 2 spaces.):
+    44:                   %li.divider
+    45:                   %li
+    46:                     = link_to t('sign_out'), signout_path, method: "delete"
+    47:            - else
+    48:               %li
+    49:                 = link_to t('contact'), contact_path
+    50:               %li= link_to "Register", root_url(:anchor => "getting-started"), :class => "callout"
+  app/views/layouts/_header.html.haml:47
+  app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:31:42 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (0.0ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (Inconsistent indentation: 15 spaces were used for indentation, but the rest of the document was indented using 2 spaces.):
+    45:                   %li
+    46:                     = link_to t('sign_out'), signout_path, method: "delete"
+    47:             - else
+    48:                %li
+    49:                  = link_to t('contact'), contact_path
+    50:                %li= link_to "Register", root_url(:anchor => "getting-started"), :class => "callout"
+    51:                %li.dropdown
+  app/views/layouts/_header.html.haml:48
+  app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.6ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:31:45 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (0.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (Inconsistent indentation: 15 spaces were used for indentation, but the rest of the document was indented using 2 spaces.):
+    45:                   %li
+    46:                     = link_to t('sign_out'), signout_path, method: "delete"
+    47:             - else
+    48:                %li
+    49:                  = link_to t('contact'), contact_path
+    50:                %li= link_to "Register", root_url(:anchor => "getting-started"), :class => "callout"
+    51:                %li.dropdown
+  app/views/layouts/_header.html.haml:48
+  app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:32:08 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (62.4ms)
+  Rendered layouts/_footer.html.haml (15.6ms)
+  Rendered static_pages/_modal-help.html.haml (31.2ms)
+Completed 500 Internal Server Error in 156ms
+
+ActionView::Template::Error (undefined local variable or method `contact_path' for #<#<Class:0x4796748>:0x486a470>):
+    8:   .modal-body
+    9:     %p
+    10:       Technology is why there are "technical difficulties" in this world. If you experience technical difficulties with the ReviewRight assessment, please
+    11:       =link_to "contact us.", contact_path
+    12:       To help us improve ReviewRight, let us know what browser and device you are using (e.g., Mozilla Firefox version 14.0.1 on a Windows 7 PC, or Safari on iPad 3 under iOS version 5.1.1). In addition, error messages, screen shots or detailed explanations of the problem you encountered are greatly appreciated.
+    13:     %p Also let us know if technical difficulties prevented you from completing the ReviewRight assessment. ReviewLess may at their exclusive discretion erase the results of your test, or allow you to take an additional test.
+  app/views/static_pages/_modal-help.html.haml:11:in `_app_views_static_pages__modal_help_html_haml___981904421_38596500'
+  app/views/layouts/application.html.haml:20:in `_app_views_layouts_application_html_haml__356001775_34167300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.haml within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.haml (0.0ms)
+  Rendered layouts/_footer.html.haml (0.0ms)
+  Rendered static_pages/_modal-help.html.haml (0.0ms)
+  Rendered static_pages/_modal-aboutUs.html.haml (0.0ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/bg-bluePaperGrid.png" for 127.0.0.1 at 2013-01-03 16:39:14 -0500
+
+
+Started GET "/assets/logo-rr-brand.png" for 127.0.0.1 at 2013-01-03 16:39:15 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo-rr-brand.png"):
+  actionpack (3.2.4.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.4.rc1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.4.rc1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.4.rc1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.4.rc1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.4.rc1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.4.rc1) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.4.rc1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.4.rc1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.4.rc1) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.4.1) lib/thin/connection.rb:80:in `block in pre_process'
+  thin (1.4.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.4.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.4.1) lib/thin/connection.rb:53:in `process'
+  thin (1.4.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine-1.0.0-x86 (mingw32) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine-1.0.0-x86 (mingw32) lib/eventmachine.rb:187:in `run'
+  thin (1.4.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.4.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.1) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.4.rc1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.4.rc1) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.4.rc1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.4.rc1) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.4.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/font-bebas/BEBAS___-webfont.woff" for 127.0.0.1 at 2013-01-03 16:39:15 -0500

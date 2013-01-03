@@ -1,0 +1,25 @@
+// Place all the styles related to the Tests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container-fluid > .sidebar {     
+  position: absolute;     
+  right: 20px;     
+  top: 100px;     
+  width: 420px; 
+}  
+
+.container-fluid > .content {     
+  margin-right: 440px; 
+} 
+
+.question-label {
+display:inline;
+position:relative;
+margin-left: 0.2em;
+_top:0.2em;
+}
+
+.question-input {
+display: inline;
+margin-left: 0.5em;
+}

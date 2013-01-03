@@ -1,0 +1,180 @@
+// Set the correct sprite paths
+$iconSpritePath: asset-url('glyphicons-halflings.png', image);
+$iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
+@import "bootstrap";
+body {
+  color: #555;
+  background: #2c3668 url('bg-bluePaperGrid.png') repeat fixed;
+  font-weight: 200;
+  font-family: "PTSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@import "bootstrap-responsive";
+
+.margin-top-1 {
+  margin-top: 1em;
+}
+.margin-top-2 {
+  margin-top: 2em;
+}
+.margin-top-3 {
+  margin-top: 3em;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+}
+
+.well {
+  background-color: rgba(0,0,0,0.05);
+  @include box-shadow(inset 0 5px 10px rgba(0,0,0,0.2));
+}
+
+.sidebar {
+  //float: right;
+  //width: 310px;
+}
+
+form {
+  label {
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 1px;
+    font-family: "BebasRegular", "Helvetica Neue", "Helvetica", sans-serif;
+    text-transform: uppercase;
+  }
+  input[type=text], input[type=password], textarea {
+    background-color: #DDD;
+    @include border-radius(0);
+    @include box-shadow(none);
+    border: none;
+    height: 2.5em;
+    margin-bottom: 1em;
+    color: #555;
+  }
+  input[type=submit] {
+    padding: 0.75em;
+  }
+}
+
+
+
+.navbar{
+  margin-bottom: 3em;
+  .container {
+    width: 940px;
+  }
+  .nav {
+    li {
+      a {
+        color: $linkColor;
+        padding: 20px;
+        font-size: 16px;
+        &:hover {
+          color: #fff;
+          background-color: rgba(0,0,0,0.1);
+        }
+        &.callout {
+          color: #fdf192;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      &.dropdown{
+        &.open {
+          background: #F1F1F1;
+          a {
+            color: #555;
+            text-shadow: 0 1px 0 #FFF;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    @include box-shadow(0 8px 10px rgba(0,0,0,0.6));
+    @include border-radius(0 0 5px 5px);
+    border: none;
+    background-color: #F1F1F1;
+    margin-top: 0;
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+    form.signin {
+      padding: 20px 20px 0;
+    }
+  }
+
+  .navbar-inner {
+    background: rgba(0,0,0,0.4);
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    font-family: "BebasRegular", "Helvetica Neue", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    .brand {
+      position: relative;
+      background: #F1F1F1 url('logo-rr-brand.png') no-repeat center center;
+      padding: 0;
+      margin: 0;
+      height: 80px;
+      display: block;
+      width: 100%;
+      text-indent: -9999px;
+      border-bottom: 1px solid #FFF;
+      @include box-shadow(0 2px 4px rgba(0,0,0,0.4));
+      @include border-radius(0 0 2px 2px);
+    }
+  }
+}
+
+.btn {
+  font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.btn-x-large {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+h1 {
+}
+h2 {
+  font-size: 2em;
+  color: #44484f;
+}
+h3 {
+  font-size: 1.5em;
+  color: #555555;
+  font-weight: normal;
+}
+
+footer {
+  padding: 2.5em 0 2em;
+  margin: 4em 0 2em;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 12px;
+  color: #AAA;
+  .footer-nav {
+    li {
+      float: left;
+      margin-left: 2em;
+      font-size: 16px;
+      font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    }
+  }
+}
