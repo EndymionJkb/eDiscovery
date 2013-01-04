@@ -1,20 +1,25 @@
 !!!
-%html
-  %head
-    %title= full_title(yield(:title))
-    = stylesheet_link_tag    "application", media: "all"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
-    = favicon_link_tag 
-    = render 'layouts/shim'
-  %body
-    = render 'layouts/header'
-    .container
-      - flash.each do |key, value|
-        %div{:class => "alert alert-#{key}"}
-          %a.close{"data-dismiss" => "alert"} ×
-          = content_tag(:div, value)
-    = yield
-    = render 'layouts/footer'
-    = render 'static_pages/modal-help'
-    = render 'static_pages/modal-aboutUs'
+%head
+  %meta{:content => 'text/html', :charset => 'UTF-8', 'http-equiv' => 'Content-Type'}
+  %meta{:name => 'description', :content => "Review Less improves e-discovery quality and lowers costs by screening document review attorneys with the Review Right test and empowering them with technology." }
+  %meta{:name => 'keywords', :content => "Review Right, Review Less, Electronic Discovery, e-discovery, EDiscovery, Document Review, Analytic Review, Contract Attorney, Review Attorney, Contract Attorney Testing, Karl Schieneman, ESIBytes, Predictive Coding, Clustering, Topic Modeling, Early Case Assessment, Deep Dive Reviews, review workflow, technology assessments, document review audits, First Pass Review, Quality Control Review, Project Management, litigation hold, collection, data remediation, key word selection, Meet and Confer Strategy, StaffRite, Discovery Land, Legal Network, 4th C Wine, Metrics" }
+  %title Review Less | Get More - Improving E-Discovery
+  = stylesheet_link_tag    "application", media: "all"
+  = javascript_include_tag "application"
+  = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
+  = javascript_include_tag "jquery.panelgallery-1_1.js"
+  = csrf_meta_tags
+  = favicon_link_tag 
+  = render 'layouts/shim'
+%body
+  = render 'layouts/header'
+  .container
+    - flash.each do |key, value|
+      %div{:class => "alert alert-#{key}"}
+        %a.close{"data-dismiss" => "alert"} ×
+        = content_tag(:div, value)
+  = yield
+  = render 'layouts/footer'
+  = render 'static_pages/modal-contactUs'
+  = render 'static_pages/modal-aboutUs'
+    

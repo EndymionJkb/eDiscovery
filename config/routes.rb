@@ -1,7 +1,13 @@
 EDiscovery::Application.routes.draw do
   root :to => 'static_pages#home'
   
-  match '/contact', to: 'static_pages#contact'  
+  match '/contact', to: 'static_pages#contact' 
+  match '/education', to: 'static_pages#education' 
+  match '/predictive_coding', to: 'static_pages#coding' 
+  match '/document_review', to: 'static_pages#review' 
+  match '/pr', to: 'static_pages#pr'
+  match '/podcasts', to: 'static_pages#podcasts'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

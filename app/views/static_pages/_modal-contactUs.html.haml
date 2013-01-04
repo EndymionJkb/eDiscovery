@@ -1,0 +1,26 @@
+#modal-contactUs.modal.hide
+  .modal-header
+    %button.close{:type => "button", :data => {:dismiss => "modal"}} X
+    %h3
+      Contact Review Less
+      -#%sup TM
+  .modal-body
+    .bd
+      %p.legible-centered
+        Review Less, LLC
+        %br/
+        One Oxford Centre, Suite 4300
+        %br/
+        301 Grant Street
+        %br/
+        Pittsburgh, PA 15219
+        %br/
+        412-486-8606
+      %br/
+      .center
+        %h3 Email Addresses and Links for Specified Services
+        %p== Predictive Coding Consulting - #{mail_to "kas@reviewless.com"}
+        %p Document Review Attorneys - Enroll with us and take our test.
+        %p Software Vendors - For a free evaluation of your software and requests to be a reseller.
+        %p== Podcast Ideas - #{mail_to "info@esibytes.com"}
+  

@@ -1,1 +1,23 @@
-%h1 Hello World
+.container
+  .row
+    .span3
+      = link_to(image_tag('/assets/ESIBytes.jpg'), 'http://www.esibytes.com')
+      .page-text
+        %br/
+        %p
+          %em &ldquo;The quality of the free -- and advertisement-free -- content is first rate and the discussions are, as you might expect, animated and fun.&rdquo;
+          %br/ 
+          == - #{link_to "Forbes	Oct 18, 2011", "http://www.forbes.com/sites/benkerschberg/2011/10/18/six-savvy-law-technology-resources/"}
+        %p Podcast content is created by and hosted by Karl Schieneman, Esq., founder of Review Less.
+        %p== Why pay others to listen to e-discovery webinars? Subscribe to #{link_to "ESIBytes", "http://www.esibytes.com"} and get top notch education for free from top industry experts which you can listen to at your own pace.   
+    .span9
+      #gallery.gallery-container
+        = image_tag '/assets/image1.jpg', :class => 'gallery-image', :alt => 'Saving Money'
+        = image_tag '/assets/image2.jpg', :class => 'gallery-image', :alt => "Why we're different"
+        = image_tag '/assets/image3.jpg', :class => 'gallery-image', :alt => 'Hiring Process'
+        = image_tag '/assets/image4.jpg', :class => 'gallery-image', :alt => 'Document Review'
+      %br/
+      .page-text
+        %p Finding electronically stored information ("ESI") is the most expensive part of litigation or an investigation.  Review Less has been a pioneer to reduce the costs of document review work through predictive coding including serving as experts in the landmark case Global Aerospace v. Landow Aviation and developing ReviewRight, technology assisted recruiting to identify qualified, document review attorneys for less cost.  As expert witnesses we enable law firms and corporations to defend their use of technology to find relevant ESI efficiently and accurately, and provide tested and screened document reviewers to do the document review work who we will employ at review rates most agencies find impossible to match.   
+        %p== Our services also include offering vendor neutral #{link_to "education and consulting", education_path} about #{link_to "predictive coding", predictive_coding_path} or technology assisted #{link_to "review", document_review_path}, we are predictive coding resellers of a complete tool kit of analytical solutions to accomplish predictive coding results, and we offer a unique methodology to recruit, employ, and improve the quality of your review team.  
+        

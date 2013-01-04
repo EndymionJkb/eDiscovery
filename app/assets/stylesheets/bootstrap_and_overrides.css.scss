@@ -121,10 +121,10 @@ form {
     text-transform: uppercase;
     .brand {
       position: relative;
-      background: #F1F1F1 url('logo-rr-brand.png') no-repeat center center;
+      background: #F1F1F1 url('logo.png') no-repeat center center;
       padding: 0;
       margin: 0;
-      height: 80px;
+      height: 120px;
       display: block;
       width: 100%;
       text-indent: -9999px;
@@ -177,4 +177,20 @@ footer {
       font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     }
   }
+}
+
+.page-text {
+  color: #CCCCCC;
+}
+
+.gallery-container {
+  position:relative;
+  height: 275;
+  width: 852;
+}
+
+.gallery-image {
+  display: none;
+  height: 275;
+  width: 852;
 }
