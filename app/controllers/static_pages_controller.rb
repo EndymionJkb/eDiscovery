@@ -20,4 +20,8 @@ class StaticPagesController < ApplicationController
   
   def contact
   end
+  
+  def bio
+    render params[:name]
+  end
 end
