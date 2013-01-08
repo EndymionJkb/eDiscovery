@@ -186,12 +186,17 @@ footer {
 
 .gallery-container {
   position:relative;
-  height: 275;
-  width: 852;
+  // This gets overriden on Chrome, IE, for some reason!
+  height: 275px!important;
+  width: 852px!important;
 }
 
 .gallery-image {
   display: none;
-  height: 275;
-  width: 852;
+  height: 275px;
+  width: 852px;
+}
+
+.flash-container {
+  height: 60px;
 }
