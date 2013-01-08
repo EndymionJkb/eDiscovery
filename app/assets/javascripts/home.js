@@ -1,5 +1,8 @@
 $(function() {
   $('#gallery').panelGallery();
+  $('#calendar').fullCalendar({
+        // put your options and callbacks here
+  });
   
   //MM_preloadImages('/assets/images/image1.jpg','/assets/images/image2.jpg','/assets/images/image3.jpg','/assets/images/image4.jpg')
 });

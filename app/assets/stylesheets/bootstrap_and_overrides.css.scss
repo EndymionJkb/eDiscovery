@@ -147,7 +147,8 @@ form {
 
 
 h1, h2, h3, h4, h5 {
-  font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  // Words are "squished" together with this font; uncomment to restore ReviewRight font
+  //font-family: "BebasRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   text-shadow: 0 1px 0 rgba(255,255,255,0.5);
   text-transform: uppercase;
 }
