@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.4.rc1'
+gem 'rails', '3.2.11'
 gem "bootstrap-sass", '2.0.4.0'
 #gem 'bcrypt-ruby', '3.0.1'
 gem 'multi_json', '1.3.4'
