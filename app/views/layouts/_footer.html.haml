@@ -6,13 +6,14 @@
           ReviewLess
           %sup SM
           One Oxford Centre, 301 Grant Street, Suite 4300, Pittsburgh, PA 15219 • (412) 486-8606
-      %ul.unstyled.footer-nav.pull-right
-        %li
-          %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
-            About
-        %li
-          %a{:href => "#modal-contactUs", :data => {:toggle => "modal"}}
-            Contact
+      -#
+        %ul.unstyled.footer-nav.pull-right
+          %li
+            %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
+              About
+          %li
+            %a{:href => "#modal-contactUs", :data => {:toggle => "modal"}}
+              Contact
   :javascript
     var _gaq = _gaq || []; 
     _gaq.push(['_setAccount', "#{GOOGLE_TA}"]);
