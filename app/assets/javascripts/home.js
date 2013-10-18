@@ -4,7 +4,9 @@ $(function() {
         // put your options and callbacks here
   });
   
-  //MM_preloadImages('/assets/images/image1.jpg','/assets/images/image2.jpg','/assets/images/image3.jpg','/assets/images/image4.jpg')
+  $('#gallery img').click(function(){
+    window.location = $(this).attr("rel");
+  });
 });
 
 function MM_swapImgRestore() { //v3.0
