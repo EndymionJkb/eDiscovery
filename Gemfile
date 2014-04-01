@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.17'
 #Retarded Windows doesn't recognize the ruby command
-ruby '1.9.3'
+#ruby '1.9.3'
 
 gem "bootstrap-sass", '2.0.4.0'
 gem 'bcrypt-ruby', '~> 3.0.0'
