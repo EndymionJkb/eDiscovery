@@ -6,9 +6,9 @@
           = link_to t('home_html'), root_path, :class => 'brand', :id => 'logo'
         %ul.nav.pull-right
           %li= link_to t('home_html'), root_path
+          %li= link_to "Review", document_review_path
           %li= link_to "Education", education_path
           %li= link_to "Predictive Coding", predictive_coding_path
-          %li= link_to "Review", document_review_path
           %li#fat-menu.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
               Explore
