@@ -13,8 +13,8 @@
         %li
           %i.fa.fa-angle-right
           Learn more about our hiring process
-      %a.button Reviews
-      %a.button About Us
+      = link_to "Review", document_review_path, class: 'button'
+      %a.button{"data-reveal-id" => "aboutModal", :href => "#"} About Us
     .small-12.medium-6.columns
       = image_tag('photo.png')
 %section

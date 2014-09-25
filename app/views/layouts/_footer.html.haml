@@ -9,11 +9,9 @@
     .small-12.medium-6.columns
       %ul.button-group.clearfix
         %li.right
-          %a.button{:href => "#modal-aboutUs", :data => {:toggle => "modal"}} About
+          %a.button{"data-reveal-id" => "aboutModal", :href => "#"} About
         %li.right
-          %a.button{:href => "#modal-contactUs", :data => {:toggle => "modal"}} Contact
-
-
+          %a.button{"data-reveal-id" => "contactModal", :href => "#"} Contact
   :javascript
     var _gaq = _gaq || []; 
     _gaq.push(['_setAccount', "#{GOOGLE_TA}"]);

@@ -1,25 +1,22 @@
-#modal-contactUs.modal.hide
-  .modal-header
-    %button.close{:type => "button", :data => {:dismiss => "modal"}} X
-    %h3
-      Contact Review Less
-      -#%sup TM
-  .modal-body
-    .bd
-      %p.legible-centered
-        Review Less, LLC
-        %br/
-        One Oxford Centre, Suite 4300
-        %br/
-        301 Grant Street
-        %br/
-        Pittsburgh, PA 15219
-        %br/
-        412-486-8606
+#contactModal.reveal-modal{"data-reveal" => ""}
+  %h2 Contact Review Less
+  %p.lead Review less. Get more.
+  .bd
+    %p.legible-centered
+      Review Less, LLC
       %br/
-      .center
-        %h3 Email Addresses and Links for Specified Services
-        %p==Predictive Coding Consulting & Education or Document Review Projects - #{mail_to 'kas@reviewless.com'}
-        %p== #{link_to 'Document Review Attorneys', 'http://reviewright.com', :target => '_blank'} - Enroll with us by taking our test.
-        %p== Podcast Ideas - #{mail_to "info@esibytes.com"}
+      One Oxford Centre, Suite 4300
+      %br/
+      301 Grant Street
+      %br/
+      Pittsburgh, PA 15219
+      %br/
+      412-486-8606
+    %br/
+    .center
+      %h3 Email Addresses and Links for Specified Services
+      %p==Predictive Coding Consulting & Education or Document Review Projects - #{mail_to 'kas@reviewless.com'}
+      %p== #{link_to 'Document Review Attorneys', 'http://reviewright.com', :target => '_blank'} - Enroll with us by taking our test.
+      %p== Podcast Ideas - #{mail_to "info@esibytes.com"}
+  %a.close-reveal-modal &#215;
   

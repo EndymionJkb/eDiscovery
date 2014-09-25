@@ -20,4 +20,5 @@
           %li= link_to "Document Review Blog", 'http://www.docreviewmd.com', :target => '_blank'
           %li= link_to "E-Discovery Journal", 'http://www.ediscoveryjournal.com', :target => '_blank'
           %li= link_to "Predictive Coding Podcasts", podcasts_path
-      %li= link_to "About", href: '#modal-aboutUs', data: {toggle: "modal"}
+      %li
+        %a{"data-reveal-id" => "aboutModal", :href => "#"} About
