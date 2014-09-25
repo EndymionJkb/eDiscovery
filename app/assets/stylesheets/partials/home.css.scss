@@ -4,7 +4,15 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 10rem 0 4rem;
+  padding: 2rem 0;
+  @media only screen and (min-width: 64.063em) {
+    padding: 10rem 0 4rem;
+  }
+  h2 {
+    @media only screen and (max-width: 40em) {
+      font-size: 1.5rem;
+    }
+  }
   h2, h6, ul {
     color: darken($primary-color, 35%);
   }
@@ -21,6 +29,9 @@
     }
   }
   .button {
+    @media only screen and (max-width: 40em) {
+      width: 100%;
+    }
     border: 2px solid darken($primary-color, 25%);
     background: none;
     color: darken($primary-color, 35%);
