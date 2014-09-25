@@ -15,7 +15,15 @@
     = favicon_link_tag 
     = render 'layouts/shim'
   %body
-    = render 'layouts/header'
+    - if params[:action] == "home"
+      .row.white-header
+        .large-12.columns
+          = render 'layouts/header'
+    - else
+      .contain-to-grid
+        = render 'layouts/header'
+      
+      
     .container.flash-container
       - flash.each do |key, value|
         %div{:class => "alert alert-#{key}"}

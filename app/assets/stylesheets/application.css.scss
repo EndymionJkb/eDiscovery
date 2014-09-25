@@ -13,10 +13,14 @@
 // Foundation
 @import "foundation_and_overrides";
 
+// Imports
+@import "font-awesome";
+@import "font-bebas";
+@import "partials/header";
+@import "partials/home";
+
 // @import "variables-and-mixins.css.scss";
 // @import "bootstrap_and_overrides.css.scss";
-@import "font-awesome.css.scss";
-@import "font-bebas.css.scss";
 // @import "assessments.css.scss";
 // @import "custom.css.scss";
 // @import "sessions.css.scss";

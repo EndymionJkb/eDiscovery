@@ -1,0 +1,21 @@
+.white-header {
+  @media only screen and (min-width: 64.063em) { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 2rem;
+  }
+  .top-bar {
+    background: $white;
+    .top-bar-section li a {
+      background: $white;
+    }
+  }
+  .top-bar-section .has-dropdown > a:after {
+    border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
+  }
+  .top-bar-section .has-dropdown:hover > a:after {
+    border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+  }
+}

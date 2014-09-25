@@ -2,7 +2,7 @@
   %ul.title-area
     %li.name
       %h1
-        %a{:href => "#"} My Site
+        = link_to(image_tag('logo.png'), root_path)
     / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
@@ -15,11 +15,9 @@
       %li= link_to "Education", education_path
       %li= link_to "Predictive Coding", predictive_coding_path
       %li.has-dropdown
-        %a{:href => "#"} Right Button Dropdown
+        %a{:href => "#"} Explore
         %ul.dropdown
           %li= link_to "Document Review Blog", 'http://www.docreviewmd.com', :target => '_blank'
           %li= link_to "E-Discovery Journal", 'http://www.ediscoveryjournal.com', :target => '_blank'
           %li= link_to "Predictive Coding Podcasts", podcasts_path
-      %li
-        %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
-          About
+      %li= link_to "About", href: '#modal-aboutUs', data: {toggle: "modal"}
