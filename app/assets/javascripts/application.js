@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require foundation
 //= require_tree .
 
 jQuery(document).ready(function() {
@@ -20,3 +20,4 @@ jQuery(document).ready(function() {
         e.stopPropagation();
     });
 });
+$(function(){ $(document).foundation(); });

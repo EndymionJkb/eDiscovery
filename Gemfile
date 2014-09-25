@@ -4,7 +4,8 @@ gem 'rails', '3.2.18'
 #Retarded Windows doesn't recognize the ruby command
 #ruby '1.9.3'
 
-gem "bootstrap-sass", '2.0.4.0'
+# gem "bootstrap-sass", '2.0.4.0'
+gem 'foundation-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'multi_json', '1.3.4'
 gem 'thin', '1.5.1'
