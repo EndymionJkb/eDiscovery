@@ -11,6 +11,9 @@
     .top-bar-section li a {
       background: $white;
     }
+    .dropdown li a {
+      text-transform: none;
+    }
   }
   .top-bar-section .has-dropdown > a:after {
     border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;

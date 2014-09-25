@@ -14,6 +14,7 @@
     = csrf_meta_tags
     = favicon_link_tag 
     = render 'layouts/shim'
+    %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", :rel => "stylesheet"}/
   %body
     - if params[:action] == "home"
       .row.white-header
@@ -22,14 +23,13 @@
     - else
       .contain-to-grid
         = render 'layouts/header'
-      
-      
     .container.flash-container
       - flash.each do |key, value|
         %div{:class => "alert alert-#{key}"}
           %a.close{"data-dismiss" => "alert"} ×
           = content_tag(:div, value)
-    = yield
+    .main
+      = yield
     = render 'layouts/footer'
     = render 'static_pages/modal-contactUs'
     = render 'static_pages/modal-aboutUs'

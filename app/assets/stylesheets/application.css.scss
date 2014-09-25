@@ -14,10 +14,17 @@
 @import "foundation_and_overrides";
 
 // Imports
-@import "font-awesome";
 @import "font-bebas";
 @import "partials/header";
 @import "partials/home";
+
+// General Styles
+.main {
+  section:not(.intro){
+    padding: 2rem 0;
+  }
+}
+
 
 // @import "variables-and-mixins.css.scss";
 // @import "bootstrap_and_overrides.css.scss";
