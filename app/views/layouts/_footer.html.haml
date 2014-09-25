@@ -1,18 +1,19 @@
 %footer
-  .container
-    .row
-      .span8
-        %p
-          ReviewLess
-          %sup SM
-          One Oxford Centre, 301 Grant Street, Suite 4300, Pittsburgh, PA 15219 • (412) 486-8606
-      %ul.unstyled.footer-nav.pull-right
-        %li
-          %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
-            About
-        %li
-          %a{:href => "#modal-contactUs", :data => {:toggle => "modal"}}
-            Contact
+  .row
+    .small-12.medium-6.columns
+      = link_to(image_tag('logo.png'), root_path)
+      %p
+        ReviewLess
+        %sup SM
+        One Oxford Centre, 301 Grant Street, Suite 4300 <br> Pittsburgh, PA 15219 • (412) 486-8606
+    .small-12.medium-6.columns
+      %ul.button-group.clearfix
+        %li.right
+          %a.button{:href => "#modal-aboutUs", :data => {:toggle => "modal"}} About
+        %li.right
+          %a.button{:href => "#modal-contactUs", :data => {:toggle => "modal"}} Contact
+
+
   :javascript
     var _gaq = _gaq || []; 
     _gaq.push(['_setAccount', "#{GOOGLE_TA}"]);
@@ -23,5 +24,32 @@
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })(); 
-    
+    })();
+
+-# %footer
+-#   .container
+-#     .row
+-#       .span8
+-#         %p
+-#           ReviewLess
+-#           %sup SM
+-#           One Oxford Centre, 301 Grant Street, Suite 4300, Pittsburgh, PA 15219 • (412) 486-8606
+-#       %ul.unstyled.footer-nav.pull-right
+-#         %li
+-#           %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
+-#             About
+-#         %li
+-#           %a{:href => "#modal-contactUs", :data => {:toggle => "modal"}}
+-#             Contact
+-#   :javascript
+-#     var _gaq = _gaq || []; 
+-#     _gaq.push(['_setAccount', "#{GOOGLE_TA}"]);
+-#     _gaq.push(['_setDomainName', 'reviewless.com']);
+-#     _gaq.push(['_setAllowLinker', true]);
+-#     _gaq.push(['_trackPageview']);
+-#     (function() {
+-#       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+-#       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+-#       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+-#     })(); 
+-#     
