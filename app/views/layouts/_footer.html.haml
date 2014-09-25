@@ -25,31 +25,3 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
--# %footer
--#   .container
--#     .row
--#       .span8
--#         %p
--#           ReviewLess
--#           %sup SM
--#           One Oxford Centre, 301 Grant Street, Suite 4300, Pittsburgh, PA 15219 • (412) 486-8606
--#       %ul.unstyled.footer-nav.pull-right
--#         %li
--#           %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
--#             About
--#         %li
--#           %a{:href => "#modal-contactUs", :data => {:toggle => "modal"}}
--#             Contact
--#   :javascript
--#     var _gaq = _gaq || []; 
--#     _gaq.push(['_setAccount', "#{GOOGLE_TA}"]);
--#     _gaq.push(['_setDomainName', 'reviewless.com']);
--#     _gaq.push(['_setAllowLinker', true]);
--#     _gaq.push(['_trackPageview']);
--#     (function() {
--#       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
--#       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
--#       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
--#     })(); 
--#     

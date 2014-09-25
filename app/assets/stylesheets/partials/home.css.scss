@@ -1,5 +1,9 @@
 .intro {
-  background: $primary-color;
+  background: url('header-bg.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding: 10rem 0 4rem;
   h2 span, h6 {
     font-weight: bold;
@@ -15,6 +19,7 @@
   }
   .button {
     border: 2px solid $black;
+    background: none;
     color: black;
     margin-right: 1rem;
     &:hover {
