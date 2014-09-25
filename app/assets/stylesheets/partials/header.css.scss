@@ -1,6 +1,12 @@
 .top-bar-section ul li > a {
   font-weight: bold;
 }
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+  background: darken($primary-color, 30%)
+}
+.name {
+  background: $white;
+}
 .white-header {
   @media only screen and (min-width: 64.063em) { 
     position: absolute;
@@ -13,6 +19,7 @@
     background: $white;
     .top-bar-section li a {
       background: $white;
+      color: $primary-color;
     }
     .dropdown li a {
       text-transform: none;

@@ -9,12 +9,12 @@ footer {
     color: $base;
   }
   .button {
-    color: $black;
+    color: darken($primary-color, 25%);
     background: none;
     font-weight: bold;
     margin-right: 1rem;
     &:hover {
-      color: darken($primary-color, 40%)
+      color: white;
     }
   }
 }
