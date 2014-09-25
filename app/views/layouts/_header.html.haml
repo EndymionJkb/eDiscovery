@@ -10,10 +10,10 @@
   %section.top-bar-section
     / Right Nav Section
     %ul.right
-      %li= link_to t('home_html'), root_path
-      %li= link_to "Review", document_review_path
-      %li= link_to "Education", education_path
-      %li= link_to "Predictive Coding", predictive_coding_path
+      %li= nav_link t('home_html'), root_path
+      %li= nav_link "Review", document_review_path
+      %li= nav_link "Education", education_path
+      %li= nav_link "Predictive Coding", predictive_coding_path
       %li.has-dropdown
         %a{:href => "#"} Explore
         %ul.dropdown
