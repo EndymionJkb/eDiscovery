@@ -1,27 +1,25 @@
-%header.navbar
-  .navbar-inner
-    .container
-      .row
-        .span3
-          = link_to t('home_html'), root_path, :class => 'brand', :id => 'logo'
-        %ul.nav.pull-right
-          %li= link_to t('home_html'), root_path
-          %li= link_to "Review", document_review_path
-          %li= link_to "Education", education_path
-          %li= link_to "Predictive Coding", predictive_coding_path
-          %li#fat-menu.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Explore
-              %i.icon-caret-down
-            %ul.dropdown-menu
-              %li= link_to "Document Review Blog", 'http://www.docreviewmd.com', :target => '_blank'
-              %li= link_to "E-Discovery Journal", 'http://www.ediscoveryjournal.com', :target => '_blank'
-              %li= link_to "Predictive Coding Podcasts", podcasts_path
-          %li
-            %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
-              About
-          -#
-            %li
-              %a{:href => "#modal-contactUs", :data => {:toggle => "modal"}}
-                Contact
- 
+%nav.top-bar{"data-topbar" => "", :role => "navigation"}
+  %ul.title-area
+    %li.name
+      %h1
+        %a{:href => "#"} My Site
+    / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+    %li.toggle-topbar.menu-icon
+      %a{:href => "#"}
+        %span Menu
+  %section.top-bar-section
+    / Right Nav Section
+    %ul.right
+      %li= link_to t('home_html'), root_path
+      %li= link_to "Review", document_review_path
+      %li= link_to "Education", education_path
+      %li= link_to "Predictive Coding", predictive_coding_path
+      %li.has-dropdown
+        %a{:href => "#"} Right Button Dropdown
+        %ul.dropdown
+          %li= link_to "Document Review Blog", 'http://www.docreviewmd.com', :target => '_blank'
+          %li= link_to "E-Discovery Journal", 'http://www.ediscoveryjournal.com', :target => '_blank'
+          %li= link_to "Predictive Coding Podcasts", podcasts_path
+      %li
+        %a{:href => "#modal-aboutUs", :data => {:toggle => "modal"}}
+          About

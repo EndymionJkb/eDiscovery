@@ -6,7 +6,7 @@
     %meta{:name => 'keywords', :content => "Review Right, Review Less, Electronic Discovery, e-discovery, EDiscovery, Document Review, Analytic Review, Contract Attorney, Review Attorney, Contract Attorney Testing, Karl Schieneman, ESIBytes, Predictive Coding, Clustering, Topic Modeling, Early Case Assessment, Deep Dive Reviews, review workflow, technology assessments, document review audits, First Pass Review, Quality Control Review, Project Management, litigation hold, collection, data remediation, key word selection, Meet and Confer Strategy, StaffRite, Discovery Land, Legal Network, 4th C Wine, Metrics" }
     %title Review Less | Get More - Improving E-Discovery
     = stylesheet_link_tag    "application", media: "all"
-    = javascript_include_tag "application"
+    = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"
     = javascript_include_tag "jquery-ui-1.8.23.custom.min.js"
     = javascript_include_tag "fullcalendar.min.js"
@@ -25,3 +25,4 @@
     = render 'layouts/footer'
     = render 'static_pages/modal-contactUs'
     = render 'static_pages/modal-aboutUs'
+  = javascript_include_tag "application"

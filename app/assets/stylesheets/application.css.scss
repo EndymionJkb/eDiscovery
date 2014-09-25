@@ -10,15 +10,18 @@
  *
 */
 
-@import "variables-and-mixins.css.scss";
-@import "bootstrap_and_overrides.css.scss";
+// Foundation
+@import "foundation_and_overrides";
+
+// @import "variables-and-mixins.css.scss";
+// @import "bootstrap_and_overrides.css.scss";
 @import "font-awesome.css.scss";
 @import "font-bebas.css.scss";
-@import "assessments.css.scss";
-@import "custom.css.scss";
-@import "sessions.css.scss";
-@import "static_pages.css.scss";
-@import "tests.css.scss";
-@import "users.css.scss";
-@import "home.css.scss";
-@import "fullcalendar.css";
+// @import "assessments.css.scss";
+// @import "custom.css.scss";
+// @import "sessions.css.scss";
+// @import "static_pages.css.scss";
+// @import "tests.css.scss";
+// @import "users.css.scss";
+// @import "home.css.scss";
+// @import "fullcalendar.css";
