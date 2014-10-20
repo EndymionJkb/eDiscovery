@@ -2,14 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.18'
 #Retarded Windows doesn't recognize the ruby command
-#ruby '1.9.3'
+ruby '1.9.3'
 
 # gem "bootstrap-sass", '2.0.4.0'
 gem 'foundation-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'multi_json', '1.3.4'
 gem 'thin', '1.5.1'
-gem 'sass-rails',   '3.2.4'
+gem 'sass-rails', '3.2.4'
+gem 'haml-rails', '0.3.5'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -19,7 +20,6 @@ end
 group :development do
   gem 'annotate', '2.5.0'
   gem 'heroku', '2.39.3'
-  gem 'haml-rails', '0.3.5'
   gem 'better_errors', '0.9.0'
   gem 'binding_of_caller', '0.7.2'
 end
