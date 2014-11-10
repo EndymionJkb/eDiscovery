@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.18'
+gem 'rails', '3.2.20'
 #Retarded Windows doesn't recognize the ruby command
 ruby '1.9.3'
 
